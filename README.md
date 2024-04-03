@@ -1,7 +1,7 @@
 # Anggota Kelompok
 | Nama | NRP |
 | ---------------------- | ---------- |
-| Khansa | 5027221035 |
+| Khansa |  |
 | Gilang Raya Kurniwan | 5027221045 |
 
 # 1. Soal Praktikum Jarkom Nomer 1 (creds)
