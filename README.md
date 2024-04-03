@@ -85,11 +85,13 @@ Dikerjakan Dengan memasukan *nc 10.15.40.20 10005* di terminal linux
 ## Pengerjaan
 
 1. Untuk mencari informasi percobaan login yang dilakukan melalui FTP oleh hacker bisa dengan memfilter dengan command berikut:
-   *ftp && frame contains " Login "*
+   `````````````````````````````````
+   ftp && frame contains " Login "
+   `````````````````````````````````
    Sehingga akan, memunculkan jumlah attemp yang dilakukan oleh hacker pada bagian paling bawah yaitu **Displayed:**, pada soal ini terlihat bahwa terdapat 934 percobaan login yang dilakukan oleh hacker.
    <img width="1101" alt="image" src="https://github.com/GilangRK411/Jarkom-Modul-1-IT10-2024/assets/130457714/71e08937-191a-4ae4-abcc-907b4df85a09">
 
-2. Selanjutnya, pada terminal masukkan jawaban untuk membuktikan kebenarannya dan mendapatkan flag.
+3. Selanjutnya, pada terminal masukkan jawaban untuk membuktikan kebenarannya dan mendapatkan flag.
    <img width="668" alt="image" src="https://github.com/GilangRK411/Jarkom-Modul-1-IT10-2024/assets/130457714/6a679ea7-af46-4265-8ea0-10cc14f9d04f">
 
 
