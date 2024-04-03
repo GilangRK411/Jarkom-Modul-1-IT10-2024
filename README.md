@@ -75,3 +75,28 @@ Lihat yang di bawah akan ditemukan nama yang mencurigakan yaitu STOR m4L1c10us_W
 
 <img src="https://i.ibb.co/7Kwp2Cs/Screenshot-2024-04-03-140643.png" alt="Screenshot-2024-04-03-140643" border="0">
 
+# 6. Soal Praktikum Jarkom Nomer 6 (whoami) 
+
+Dapatkah kamu menemukan siapa identitas attacker?
+
+Dikerjakan Dengan memasukan *nc 10.15.40.20 10009* di terminal linux
+
+## Pengerjaan
+
+1. Cari Jawaban dengan menggunakan FIlter FTP-DATA
+2. Temukan file/jaringsan yang menurut kalian paling mencurigakan disini saya menggunakan fila berdata sebagai berikut *1544	391.142970	10.30.3.1	10.15.40.20	FTP-DATA	260	FTP Data: 188 bytes (PASV) (STOR m4L1c10us_W4re.c)*
+
+<img src="https://i.ibb.co/mt88HSF/Screenshot-2024-04-03-184934.png" alt="Screenshot-2024-04-03-184934" border="0">
+
+3. Coba masuk ke jaringan tersebut dengan menggunakan **follow TCP Stream**, Didalamya akan ada **text yang sudah di code dengan format base64** coba decode kode tersebut ke text aslinya
+
+<img src="https://i.ibb.co/8X3SS6T/Screenshot-2024-04-03-184942.png" alt="Screenshot-2024-04-03-184942" border="0">
+
+4. Hapus **tanda // dari code tersebut dari //SGVsbG8gbXkgbmFtZSBpcyBQYXVsIEF0cmVpZGVzCg== menjadi SGVsbG8gbXkgbmFtZSBpcyBQYXVsIEF0cmVpZGVzCg==** maka code tersebut akan menjadi text normal yang bertuliskan **Hello my name is Paul Atreides**
+
+<img src="https://i.ibb.co/1GMQb4L/Screenshot-2024-04-03-185150.png" alt="Screenshot-2024-04-03-185150" border="0">
+
+5. Masuk ke soal *nc 10.15.40.20 10009* lewat OS linux anda masukkan jawaban ke soal Paul_Atreides maka FLAG CTF akan muncul **JARKOM2024{Duk3_0f_4rak!s_LISAN AL GHAIB!_9hrCY7xygAFoC8q}**
+
+<img src="https://i.ibb.co/hsL5CzQ/Screenshot-2024-04-03-185948.png" alt="Screenshot-2024-04-03-185948" border="0">
+
