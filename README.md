@@ -1,8 +1,8 @@
 # Anggota Kelompok
 | Nama | NRP |
 | ---------------------- | ---------- |
-| Khansa | 5027221071  |
-| Gilang Raya Kurniwan | 5027221045 |
+| Khansa Adia Rahma      | 5027221071 |
+| Gilang Raya Kurniwan   | 5027221045 |
 
 # 1. Soal Praktikum Jarkom Nomer 1 (creds)
 
