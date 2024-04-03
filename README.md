@@ -8,7 +8,7 @@
 
 Attacker menyadari jika dia bisa membuat clone ftp server dari target, temukan kredensialn dari server ftp yang dibuat oleh attacker
 
-Dikerjakan dengan *nc 10.15.40.20 10007*
+Dikerjakan dengan memasukan *nc 10.15.40.20 10007* di terminal linux
 
 ## pengerjaan
 1. Cari file / jaringan yang mencurigakan dari soal yang diberikan yaitu evidience.pcap
@@ -24,14 +24,14 @@ Dikerjakan dengan *nc 10.15.40.20 10007*
 
 <img src="https://i.ibb.co/ncJd660/Screenshot-2024-04-03-132434.png" alt="Screenshot-2024-04-03-132434" border="0">
 
-5. Jika benar maka soal akan memberikan kunci jawaban dari CTF tersebut (JARKOM2024{s3curE_uR_FtP_xTfkXcpfQAVHRA9})
+5. FLAG CTF (JARKOM2024{s3curE_uR_FtP_xTfkXcpfQAVHRA9})
 
 
 # 2. Soal Praktikum Jarkom Nomer 2
 
 Pradityo mencoba mengembangkan server ftp, tetapi seseorang mencoba melakukan bruteforce login, bisakah Anda menganalisis apa yang terjadi?
 
-Dikerjakan Dengan *nc 10.15.40.20 10004*
+Dikerjakan Dengan memasukan *nc 10.15.40.20 10004* di terminal linux
 
 ## Pengerjaan
 
@@ -43,3 +43,7 @@ Dikerjakan Dengan *nc 10.15.40.20 10004*
 Ketika di buka dengan **klik kanan lalu klik follow TCP Stream**
 
 <img src="https://i.ibb.co/Z8pZFpv/Screenshot-276.png" alt="Screenshot-276" border="0">
+
+3. Masukkan pass Bruteforce yang sudah didapat tadi ke soal *nc 10.15.40.20 10004* kalau benar maka akan muncul flag CTF nya seperti gambar di bawah
+
+   <img src="https://i.ibb.co/p2MRV1z/Screenshot-2024-04-03-133336.png" alt="Screenshot-2024-04-03-133336" border="0">
