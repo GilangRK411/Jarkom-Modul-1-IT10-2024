@@ -75,7 +75,7 @@ Lihat yang di bawah akan ditemukan nama yang mencurigakan yaitu STOR m4L1c10us_W
 
 <img src="https://i.ibb.co/7Kwp2Cs/Screenshot-2024-04-03-140643.png" alt="Screenshot-2024-04-03-140643" border="0">
 
-# 5. Soal Praktikum Jarkom Nomor 5 (How Many Packets?) 
+# 4. Soal Praktikum Jarkom Nomor 4 (How Many Packets?) 
 
 Berapa kali attempt login yang dilakukan oleh hacker?
 
@@ -93,6 +93,28 @@ Dikerjakan Dengan memasukan *nc 10.15.40.20 10005* di terminal linux
 
 3. Selanjutnya, pada terminal masukkan jawaban untuk membuktikan kebenarannya dan mendapatkan flag.
    <img width="668" alt="image" src="https://github.com/GilangRK411/Jarkom-Modul-1-IT10-2024/assets/130457714/6a679ea7-af46-4265-8ea0-10cc14f9d04f">
+
+# 5. Soal Praktikum Jarkom Nomor 5 (trace him) 
+
+Selain menghitung jumlah packet, coba lacak juga ip penyerang tersebut!
+
+Dikerjakan Dengan memasukan *nc 10.15.40.20 10006* di terminal linux
+
+
+## Pengerjaan
+
+1. Untuk melacak alamat IP hacker, dengan melihat kembali soal ATM or ATP or FTP pada nomor 2. Pada soal tersebut kita sudah berhasil menjawab untuk password yang digunakan oleh attacker yaitu: *m4y_th3_Kn!fe_ch1p_&_sh4tter*.
+2. Selanjutnya, gunakan command berikut
+   ``````````````
+   ftp.request.command == "USER" || ftp.request.command == "PASS"
+   ``````````````
+
+   Lalu cari bagian yang memiliki PASS: *m4y_th3_Kn!fe_ch1p_&_sh4tter* dan lihat kembali **IP** atau **source** yang digunakan. Pada soal ini penyerang menggunakan IP **10.30.3.4** sebagai berikut:
+   <img width="1101" alt="image" src="https://github.com/GilangRK411/Jarkom-Modul-1-IT10-2024/assets/130457714/5506bf77-b818-4215-b731-0ec72e04c82b">
+
+3. Selanjutnya, pada terminal masukkan jawaban untuk membuktikan kebenarannya dan mendapatkan flag.
+<img width="668" alt="image" src="https://github.com/GilangRK411/Jarkom-Modul-1-IT10-2024/assets/130457714/24eb4fe6-9e03-4d48-b66a-9fbffac97d2e">
+
 
 
 # 6. Soal Praktikum Jarkom Nomer 6 (whoami) 
