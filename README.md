@@ -2,7 +2,7 @@
 | Nama | NRP |
 | ---------------------- | ---------- |
 | Khansa Adia Rahma      | 5027221071 |
-| Gilang Raya Kurniwan   | 5027221045 |
+| Gilang Raya Kurnaiwan   | 5027221045 |
 
 # 1. Soal Praktikum Jarkom Nomer 1 (creds)
 
@@ -125,8 +125,9 @@ Dikerjakan Dengan memasukan *nc 10.15.40.20 10009* di terminal linux
 
 ## Pengerjaan
 
-1. Cari Jawaban dengan menggunakan FIlter FTP-DATA
-2. Temukan file/jaringsan yang menurut kalian paling mencurigakan disini saya menggunakan fila berdata sebagai berikut *1544	391.142970	10.30.3.1	10.15.40.20	FTP-DATA	260	FTP Data: 188 bytes (PASV) (STOR m4L1c10us_W4re.c)*
+1. Cari Jawaban dengan menggunakan FIlter FTP-DATA di wireshark
+   
+3. Temukan file/jaringsan yang menurut kalian paling mencurigakan disini saya menggunakan fila berdata sebagai berikut *1544	391.142970	10.30.3.1	10.15.40.20	FTP-DATA	260	FTP Data: 188 bytes (PASV) (STOR m4L1c10us_W4re.c)*
 
 <img src="https://i.ibb.co/mt88HSF/Screenshot-2024-04-03-184934.png" alt="Screenshot-2024-04-03-184934" border="0">
 
@@ -142,3 +143,35 @@ Dikerjakan Dengan memasukan *nc 10.15.40.20 10009* di terminal linux
 
 <img src="https://i.ibb.co/hsL5CzQ/Screenshot-2024-04-03-185948.png" alt="Screenshot-2024-04-03-185948" border="0">
 
+# 6. Soal Praktikum Jarkom Nomer 7 (evidence) 
+
+Perusahaan nanomate baru saja kebobolan. Mereka menyewamu untuk mencari tahu bagaimana caranya pelaku bisa masuk.
+
+Dikerjakan Dengan memasukan *nc 10.15.40.20 10002* di terminal linux
+
+## Pengerjaan
+
+1. Buka WIreshark dan, Masukkan di terminal wireshark filter *tcp/http*
+
+<img src="https://i.ibb.co/5YpRhNB/Screenshot-2024-04-04-091229.png" alt="Screenshot-2024-04-04-091229" border="0">
+
+Jika masih belum menemukan yang kalian cari ganti dengan filter baru misal *tcp contains "login"*
+
+<img src="https://i.ibb.co/m0SZBLK/Screenshot-2024-04-04-091318.png" alt="Screenshot-2024-04-04-091318" border="0">
+
+2. buka sebuah jaringan yang menurut anda berisi data tentang Domain, Server dan hal lain yang di butuhkan di soal 7 ini
+
+<img src="https://i.ibb.co/hMBT4pR/Screenshot-2024-04-04-091343.png" alt="Screenshot-2024-04-04-091343" border="0">
+
+DIsini anda akan kekurangan data yaitu data tengang email yang berhasil login, clue nya adalah **lihat data yang anda buka kalau ada tulisan Invalid Username or Password, berati pasti ada data yang Login successful.** Data yang benar Tersebut didapat dari memasukan filter *tcp.stream eq 1240* di terminal wireshark
+
+<img src="https://i.ibb.co/WHs8M27/Screenshot-2024-04-04-091413.png" alt="Screenshot-2024-04-04-091413" border="0">
+
+3.  Masukkan Jawaban - jawaban yang sudah ditemukan ke soal *nc 10.15.40.20 10009*
+
+<img src="https://i.ibb.co/WpjPHSJ/Screenshot-2024-04-04-091530.png" alt="Screenshot-2024-04-04-091530" border="0">
+
+4.  Flag Ditemukan dengan format nama
+
+<img src="https://i.ibb.co/34qbBQF/Screenshot-2024-04-04-091535.png" alt="Screenshot-2024-04-04-091535" border="0">
+   
