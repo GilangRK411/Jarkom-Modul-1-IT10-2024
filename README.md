@@ -143,7 +143,7 @@ Dikerjakan Dengan memasukan *nc 10.15.40.20 10009* di terminal linux
 
 <img src="https://i.ibb.co/hsL5CzQ/Screenshot-2024-04-03-185948.png" alt="Screenshot-2024-04-03-185948" border="0">
 
-# 6. Soal Praktikum Jarkom Nomer 7 (evidence) 
+# 7. Soal Praktikum Jarkom Nomer 7 (evidence) 
 
 Perusahaan nanomate baru saja kebobolan. Mereka menyewamu untuk mencari tahu bagaimana caranya pelaku bisa masuk.
 
