@@ -4,22 +4,22 @@
 | Khansa Adia Rahma      | 5027221071 |
 | Gilang Raya Kurnaiwan   | 5027221045 |
 
-# 1. Soal Praktikum Jarkom Nomer 1 (creds)
+## 1. Soal Praktikum Jarkom Nomer 1 (creds)
 
 Attacker menyadari jika dia bisa membuat clone ftp server dari target, temukan kredensialn dari server ftp yang dibuat oleh attacker
 
 Dikerjakan dengan memasukan *nc 10.15.40.20 10007* di terminal linux
 
-## pengerjaan
+## Pengerjaan
 1. Cari file / jaringan yang mencurigakan dari soal yang diberikan yaitu *evidience.pcap*
    
 2. Cari dengan menggunakan **filter protocal FTP**, Cari yang mencurigakan / beda (disini saya menemunkan dari info) USER h3ngk3rTzy dan PASS S!l3ncE
 
 <img src="https://i.ibb.co/9GspYbS/Screenshot-2024-04-03-132108.png" alt="Screenshot-2024-04-03-132108" border="0">
 
-3. Caba masuk dari salah satu jaringan tadi misal **dari IP 10.30.3.1 dengan info USER h3ngk3rTzy** dengan klik kanan lalu **kilk follow TCP stream**
+3. masuk dari salah satu jaringan tadi misal **dari IP 10.30.3.1 dengan info USER h3ngk3rTzy** dengan klik kanan lalu **kilk follow TCP stream**
 
-<img src="https://i.ibb.co/dpj16M6/Screenshot-2024-04-03-132211.png" alt="Screenshot-2024-04-03-132211" border="0">
+<img src="https://i.ibb.co/BL1X0XM/Screenshot-2024-04-04-092903.png" alt="Screenshot-2024-04-04-092903" border="0">
 
 4. Coba masukan USER dan PASS yang ada di dalam jaringan tersebut ke Soal *nc 10.15.40.20 10007* dengan **format USER:username dan PASS:password**
 
@@ -27,14 +27,13 @@ Dikerjakan dengan memasukan *nc 10.15.40.20 10007* di terminal linux
 
 5. FLAG CTF (JARKOM2024{s3curE_uR_FtP_xTfkXcpfQAVHRA9})
 
-
-# 2. Soal Praktikum Jarkom Nomer 2 (ATM or ATP or FTP ?)
+## 2. Soal Praktikum Jarkom Nomer 2 (ATM or ATP or FTP ?)
 
 Pradityo mencoba mengembangkan server ftp, tetapi seseorang mencoba melakukan bruteforce login, bisakah Anda menganalisis apa yang terjadi?
 
 Dikerjakan Dengan memasukan *nc 10.15.40.20 10004* di terminal linux
 
-## Pengerjaan
+### Pengerjaan
 
 1. Cari dengan filter protocol FTP
    
@@ -50,14 +49,13 @@ Ketika di buka dengan **klik kanan lalu klik follow TCP Stream**
 
    <img src="https://i.ibb.co/p2MRV1z/Screenshot-2024-04-03-133336.png" alt="Screenshot-2024-04-03-133336" border="0">
 
-# 3. Soal Praktikum Jarkom Nomer 3 (malwleowleo) 
+## 3. Soal Praktikum Jarkom Nomer 3 (malwleowleo) 
 
 Dapatkah kamu menemukan file malware yang dikirim oleh attacker melalui ftp?
 
 Dikerjakan Dengan memasukan *nc 10.15.40.20 10008* di terminal linux
 
-
-## Pengerjaan
+### Pengerjaan
 
 1. Mirip-mirip dengan soal nomer 1 tadi bedanya ini didapat dari *IP Addres 10.30.3.1* dengan filter pencarian *tcp.stream. eq 2*
 
@@ -75,14 +73,13 @@ Lihat yang di bawah akan ditemukan nama yang mencurigakan yaitu STOR m4L1c10us_W
 
 <img src="https://i.ibb.co/7Kwp2Cs/Screenshot-2024-04-03-140643.png" alt="Screenshot-2024-04-03-140643" border="0">
 
-# 4. Soal Praktikum Jarkom Nomor 4 (How Many Packets?) 
+## 4. Soal Praktikum Jarkom Nomor 4 (How Many Packets?) 
 
 Berapa kali attempt login yang dilakukan oleh hacker?
 
 Dikerjakan Dengan memasukan *nc 10.15.40.20 10005* di terminal linux
 
-
-## Pengerjaan
+### Pengerjaan
 
 1. Untuk mencari informasi percobaan login yang dilakukan melalui FTP oleh hacker bisa dengan memfilter dengan command berikut:
    `````````````````````````````````
@@ -94,14 +91,13 @@ Dikerjakan Dengan memasukan *nc 10.15.40.20 10005* di terminal linux
 3. Selanjutnya, pada terminal masukkan jawaban untuk membuktikan kebenarannya dan mendapatkan flag.
    <img width="668" alt="image" src="https://github.com/GilangRK411/Jarkom-Modul-1-IT10-2024/assets/130457714/6a679ea7-af46-4265-8ea0-10cc14f9d04f">
 
-# 5. Soal Praktikum Jarkom Nomor 5 (trace him) 
+## 5. Soal Praktikum Jarkom Nomor 5 (trace him) 
 
 Selain menghitung jumlah packet, coba lacak juga ip penyerang tersebut!
 
 Dikerjakan Dengan memasukan *nc 10.15.40.20 10006* di terminal linux
 
-
-## Pengerjaan
+### Pengerjaan
 
 1. Untuk melacak alamat IP hacker, dengan melihat kembali soal ATM or ATP or FTP pada nomor 2. Pada soal tersebut kita sudah berhasil menjawab untuk password yang digunakan oleh attacker yaitu: *m4y_th3_Kn!fe_ch1p_&_sh4tter*.
 2. Selanjutnya, gunakan command berikut
@@ -115,41 +111,44 @@ Dikerjakan Dengan memasukan *nc 10.15.40.20 10006* di terminal linux
 3. Selanjutnya, pada terminal masukkan jawaban untuk membuktikan kebenarannya dan mendapatkan flag.
 <img width="668" alt="image" src="https://github.com/GilangRK411/Jarkom-Modul-1-IT10-2024/assets/130457714/24eb4fe6-9e03-4d48-b66a-9fbffac97d2e">
 
-
-
-# 6. Soal Praktikum Jarkom Nomer 6 (whoami) 
+## 6. Soal Praktikum Jarkom Nomer 6 (whoami) 
 
 Dapatkah kamu menemukan siapa identitas attacker?
 
 Dikerjakan Dengan memasukan *nc 10.15.40.20 10009* di terminal linux
 
-## Pengerjaan
+### Pengerjaan
 
 1. Cari Jawaban dengan menggunakan FIlter FTP-DATA di wireshark
    
-3. Temukan file/jaringsan yang menurut kalian paling mencurigakan disini saya menggunakan fila berdata sebagai berikut *1544	391.142970	10.30.3.1	10.15.40.20	FTP-DATA	260	FTP Data: 188 bytes (PASV) (STOR m4L1c10us_W4re.c)*
+3. Temukan file/jaringsan yang menurut kalian paling mencurigakan disini saya menggunakan fila berdata sebagai berikut
+  ``````````````
+1544	391.142970	10.30.3.1	10.15.40.20	FTP-DATA	260	FTP Data: 188 bytes (PASV) (STOR m4L1c10us_W4re.c)
+  ``````````````
 
-<img src="https://i.ibb.co/mt88HSF/Screenshot-2024-04-03-184934.png" alt="Screenshot-2024-04-03-184934" border="0">
+<img src="https://i.ibb.co/sCB66LP/Screenshot-2024-04-04-092958.png" alt="Screenshot-2024-04-04-092958" border="0">
 
-3. Coba masuk ke jaringan tersebut dengan menggunakan **follow TCP Stream**, Didalamya akan ada **text yang sudah di code dengan format base64** coba decode kode tersebut ke text aslinya
+3. masuk ke jaringan tersebut dengan menggunakan **follow TCP Stream**, Didalamya akan ada **text yang sudah di code dengan format base64** coba decode kode tersebut ke text aslinya
 
 <img src="https://i.ibb.co/8X3SS6T/Screenshot-2024-04-03-184942.png" alt="Screenshot-2024-04-03-184942" border="0">
 
 4. Hapus **tanda // dari code tersebut dari //SGVsbG8gbXkgbmFtZSBpcyBQYXVsIEF0cmVpZGVzCg== menjadi SGVsbG8gbXkgbmFtZSBpcyBQYXVsIEF0cmVpZGVzCg==** maka code tersebut akan menjadi text normal yang bertuliskan **Hello my name is Paul Atreides**
 
-<img src="https://i.ibb.co/1GMQb4L/Screenshot-2024-04-03-185150.png" alt="Screenshot-2024-04-03-185150" border="0">
+<img src="https://i.ibb.co/MR33dk6/Screenshot-2024-04-04-093144.png" alt="Screenshot-2024-04-04-093144" border="0">
 
 5. Masuk ke soal *nc 10.15.40.20 10009* lewat OS linux anda masukkan jawaban ke soal Paul_Atreides maka FLAG CTF akan muncul **JARKOM2024{Duk3_0f_4rak!s_LISAN AL GHAIB!_9hrCY7xygAFoC8q}**
 
 <img src="https://i.ibb.co/hsL5CzQ/Screenshot-2024-04-03-185948.png" alt="Screenshot-2024-04-03-185948" border="0">
 
-# 7. Soal Praktikum Jarkom Nomer 7 (evidence) 
+# **Revisi**
+
+## 7. Soal Praktikum Jarkom Nomer 7 (evidence) 
 
 Perusahaan nanomate baru saja kebobolan. Mereka menyewamu untuk mencari tahu bagaimana caranya pelaku bisa masuk.
 
 Dikerjakan Dengan memasukan *nc 10.15.40.20 10002* di terminal linux
 
-## Pengerjaan
+### Pengerjaan
 
 1. Buka WIreshark dan, Masukkan di terminal wireshark filter *tcp/http*
 
